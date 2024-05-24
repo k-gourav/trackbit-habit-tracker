@@ -4,27 +4,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+#root,body{
   min-height: 200vh;
+  background-color: #eeece2;
 }
 header{
-  display: flex;
-  justify-content: center;
-  position: fixed;
+  margin: 0 auto;
+  position: sticky;
   top: 2%;
-  width: 100%;
+  width: 88%;
 }
 .top-section{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.2rem 2rem;
-  background: #e7e7e7;
-  border-radius: 50px;
-  width: 80%;
+  width: 100%;
 }
 .logo{
-  width: 150px;
+  width: 130px;
 }
 .nav-items > ul{
   list-style: none;
@@ -32,9 +30,9 @@ header{
   gap: 2.5rem;
 }
 li a{
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   text-decoration: none;
-  color: #000;
+  color: #313638;
   font-family: "Space Grotesk", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
