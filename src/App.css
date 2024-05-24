@@ -11,7 +11,7 @@
 header{
   margin: 0 auto;
   position: sticky;
-  top: 2%;
+  top: 1.5%;
   width: 88%;
 }
 .top-section{
@@ -22,7 +22,7 @@ header{
   width: 100%;
 }
 .logo{
-  width: 130px;
+  width: 120px;
 }
 .nav-items > ul{
   list-style: none;
@@ -30,7 +30,7 @@ header{
   gap: 2.5rem;
 }
 li a{
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: #313638;
   font-family: "Space Grotesk", sans-serif;
