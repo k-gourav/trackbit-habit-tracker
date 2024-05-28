@@ -19,15 +19,10 @@ const Header = () => (
     //     </div>
     // </header>
     <header>
-        <div className="header-section">
             <div className="nav-items">
-                <img className='hamburger-icon' src={hamburger} alt="hamburger-icon-sidebar" />
                 <h1>Hello, <span>Kumar👋</span></h1>
             </div>
-            <div className="notification">
-                <img className='notif-icon' src={notif} alt="notification-bell" />
-            </div>
-        </div>
+
     </header>
 )
 

@@ -7,6 +7,7 @@
 #root,body{
   min-height: 100vh;
   background-color: #eeece2;
+  font-family: "Space Grotesk", sans-serif;
 }
 /* header{
   margin: 0 auto;
@@ -35,43 +36,64 @@ li a{
   color: #313638;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
-} */
+}
+*/
 
 
 
 /* HEADER COMPONENT */
-.header-section{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 5rem;
-}
 .nav-items{
   display: flex;
-  align-items: center;
-  gap: 3rem;
+  margin: 1.3rem 7rem;
   color: #a4500b;
-  font-family: "Space Grotesk", sans-serif;
   font-weight: 300;
 }
-.hamburger-icon{
-  width: 45px;
-}
-.notif-icon{
-  width: 38px;
-}
 @media screen and (max-width: 500px) {
-  .header-section {
+  .nav-items {
     margin: 0.5rem 2rem;
     font-size: 0.8rem;
-  }
-  .hamburger-icon{
-    width: 40px;
-  }
-  .notif-icon{
-    width: 35px;
   }
 }
 /* HEADER COMPONENT */
 
 /* BODY COMPONENT */
+.day-status{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 7rem;
+  margin-right: 10.5rem;
+}
+.calendar-icon{
+  width: 30px;
+}
+.task-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.task-logo{
+  width: 30px;
+}
+.task-list{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 7rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: #ffffff 0px 2px 8px 0px;
+  background-color: hsl(16 53.8% 47.5% / 1);
+  color: #eeece2;
+}
+.task-descript{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.checkbox-custom{
+  padding: 0.5rem;
+}
