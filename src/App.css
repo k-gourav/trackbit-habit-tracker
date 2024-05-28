@@ -44,7 +44,8 @@ li a{
 /* HEADER COMPONENT */
 .nav-items{
   display: flex;
-  margin: 1.3rem 7rem;
+  margin-top: 1.2rem;
+  margin-left: 8.8rem;
   color: #a4500b;
   font-weight: 300;
 }
@@ -60,9 +61,9 @@ li a{
 .day-status{
   display: flex;
   justify-content: space-between;
+  margin: 1.8rem 8.8rem;
+  margin-bottom: 1.5rem;
   align-items: center;
-  margin: 2rem 7rem;
-  margin-right: 10.5rem;
 }
 .calendar-icon{
   width: 30px;
@@ -71,17 +72,18 @@ li a{
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  align-items: center;
+
 }
 .task-logo{
-  width: 30px;
+  width: 40px;
 }
 .task-list{
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0rem 7rem;
-  padding: 1.2rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 16px;
   box-shadow: #ffffff 0px 2px 8px 0px;
   background-color: hsl(16 53.8% 47.5% / 1);
@@ -94,6 +96,99 @@ li a{
   font-size: 1.6rem;
   font-weight: 500;
 }
-.checkbox-custom{
-  padding: 0.5rem;
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .checkbox-wrapper-13 input[type=checkbox] {
+    --active: #ffffff;
+    --active-inner: #fff;
+    --focus: 2px rgb(255, 255, 255);
+    --border: #ffffff;
+    --border-hover: #ffffff;
+    --background: #fafbff;
+    --disabled: #6a87f2;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    width: 21px;
+    padding: 0.9rem;  /* Add padding */
+    border-radius: 8px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    box-sizing: border-box;  /* Ensure padding is included in the total size */
+  }
+  
+  .checkbox-wrapper-13 input[type=checkbox]:after {
+    content: "";
+    display: block;
+    position: absolute;
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    left: calc(50% - 2.5px);  /* Adjust to center checkmark horizontally */
+    top: calc(50% - 4.5px);   /* Adjust to center checkmark vertically */
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(var(--r, 20deg));
+    opacity: var(--o, 0);
+  }
+  
+  .checkbox-wrapper-13 input[type=checkbox]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    --o: 1;
+    --r: 43deg;
+  }
+  
+  .checkbox-wrapper-13 input[type=checkbox]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+  
+  .checkbox-wrapper-13 input[type=checkbox]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  
+  .checkbox-wrapper-13 input[type=checkbox]:disabled + label {
+    cursor: not-allowed;
+  }
+  
+  .checkbox-wrapper-13 input[type=checkbox]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+  
+  .checkbox-wrapper-13 input[type=checkbox]:focus {
+    box-shadow: 0 0 0 var(--focus);
+  }
+  
+  .checkbox-wrapper-13 input[type=checkbox] + label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+  
+  .checkbox-wrapper-13 * {
+    box-sizing: inherit;
+  }
+  
+  .checkbox-wrapper-13 *:before,
+  .checkbox-wrapper-13 *:after {
+    box-sizing: inherit;
+  }
 }
+
+
