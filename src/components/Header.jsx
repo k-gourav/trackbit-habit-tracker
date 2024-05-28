@@ -22,7 +22,6 @@ const Header = () => (
             <div className="nav-items">
                 <h1>Hello, <span>Kumar👋</span></h1>
             </div>
-
     </header>
 )
 
