@@ -5,47 +5,17 @@
   box-sizing: border-box;
 }
 #root,body{
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: #eeece2;
   font-family: "Space Grotesk", sans-serif;
 }
-/* header{
-  margin: 0 auto;
-  position: sticky;
-  top: 1.5%;
-  width: 88%;
-}
-.top-section{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.2rem 2rem;
-  width: 100%;
-}
-.logo{
-  width: 120px;
-}
-.nav-items > ul{
-  list-style: none;
-  display: flex;
-  gap: 2.5rem;
-}
-li a{
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: #313638;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 500;
-}
-*/
-
-
-
 /* HEADER COMPONENT */
 .nav-items{
   display: flex;
-  margin-top: 1.2rem;
   margin-left: 8.8rem;
+  margin-top: 1.1rem;
   color: #a4500b;
   font-weight: 300;
 }
@@ -73,6 +43,8 @@ li a{
   flex-direction: column;
   gap: 1.2rem;
   align-items: center;
+  height: 60vh;
+  overflow-y: scroll;
 
 }
 .task-logo{
@@ -83,7 +55,7 @@ li a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 16px;
   box-shadow: #ffffff 0px 2px 8px 0px;
   background-color: hsl(16 53.8% 47.5% / 1);
@@ -91,7 +63,7 @@ li a{
 }
 .task-descript{
   display: flex;
-  gap: 1.5rem;
+  gap: 1.4rem;
   align-items: center;
   font-size: 1.6rem;
   font-weight: 500;
@@ -110,8 +82,8 @@ li a{
     --disabled-inner: #ffffff;
     -webkit-appearance: none;
     -moz-appearance: none;
-    height: 21px;
-    width: 21px;
+    height: 18px;
+    width: 18px;
     padding: 0.9rem;  /* Add padding */
     border-radius: 8px;
     outline: none;
@@ -194,3 +166,24 @@ li a{
 /* BODY COMPONENT */
 
 /* FOOTER COMPONENT */
+.footer-section{
+  position: fixed;
+  bottom: 0;
+  gap: 1rem;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+input[type="text"]{
+  display: block;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  padding: 0.8rem 1rem;
+}
+button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid;
+}
