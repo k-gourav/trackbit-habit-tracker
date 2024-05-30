@@ -92,18 +92,17 @@
     gap: 1rem;
     font-size: 1.3rem;
   }
-
 }
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   .checkbox-wrapper-13 input[type=checkbox] {
-    --active: #6584ff;
+    --active: hsl(16 53.8% 47.5% / 1);  
     --active-inner: #ffffff;
-    --focus: 2px rgb(190, 121, 121);
+    --focus: 2px rgb(229, 181, 127);
     --border: #fff;
     --border-hover: #fefefe;
     --background: #fff;
-    --checked-background: #6584ff;
+    --checked-background: #e2a572;
     --disabled: #f2f3f5;
     --disabled-inner: #ffffff;
     -webkit-appearance: none;
@@ -195,9 +194,9 @@
 .footer-section{
   position: fixed;
   bottom: 1.2%;
-  left: 25%;
+  left: 19%;
   border: 1px solid;
-  width: 50%;
+  width: 60%;           /*Changes to be rechecked */
   display: flex;
   justify-content: space-between;
   align-items: center;
