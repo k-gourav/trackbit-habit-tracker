@@ -1,4 +1,5 @@
 import { useState } from "react";
+import arrow from '../assets/arrow.png'
 
 const Footer = ({ handleList, list }) => {
     const [inputValue, setInputValue] = useState('');
@@ -23,7 +24,7 @@ const Footer = ({ handleList, list }) => {
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
             />
-            <button onClick={addItem}>Enter</button>
+            <button onClick={addItem}><img className="arrow-icon" src={arrow} alt="arrow-icon" /></button>
         </div>
     );
 };

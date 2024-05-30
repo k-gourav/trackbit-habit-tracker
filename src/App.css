@@ -11,6 +11,7 @@
   background-color: #eeece2;
   font-family: "Space Grotesk", sans-serif;
 }
+
 /* HEADER COMPONENT */
 .nav-items{
   display: flex;
@@ -22,7 +23,7 @@
 @media screen and (max-width: 500px) {
   .nav-items {
     margin: 0.5rem 2rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 /* HEADER COMPONENT */
@@ -69,6 +70,29 @@
   align-items: center;
   font-size: 1.6rem;
   font-weight: 500;
+}
+@media screen and (max-width: 500px) {
+  #root,body{
+    overflow-x: hidden;
+  }
+  .day-status{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 2rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  .task-list{
+    padding: 0.3rem 0.8rem;
+  }
+  .task-container{
+    gap: 0.8rem;
+  }
+  .task-descript{
+    gap: 1rem;
+    font-size: 1.3rem;
+  }
+
 }
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
@@ -197,4 +221,23 @@ button{
   border-radius: 50%;
   border: 1px solid;
   cursor: pointer;
+  background-color: #e19f69;
 }
+.arrow-icon{
+  width: 30px;
+  transform: rotate(90deg);
+}
+@media screen and (max-width: 500px) {
+  .footer-section {
+    width: 83%;
+    left: 8.5%;
+    padding: 0.3rem;
+  }
+  input[type="text"]{
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
+    width: 90%;
+    background: transparent;
+  }
+}
+
