@@ -18,6 +18,7 @@ const Footer = ({ handleList, list }) => {
     return (
         <div className="footer-section">
             <input
+            placeholder="Enter your goal..."
                 value={inputValue}
                 type="text"
                 name="task-text"
