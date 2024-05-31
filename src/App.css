@@ -44,7 +44,7 @@
   flex-direction: column;
   gap: 1.2rem;
   align-items: center;
-  height: 60vh;
+  height: 59vh;
   overflow-y: scroll;
 }
 ::-webkit-scrollbar {
@@ -90,6 +90,7 @@
   }
   .task-container{
     gap: 0.8rem;
+    height: 71vh;
   }
   .task-descript{
     gap: 1rem;
