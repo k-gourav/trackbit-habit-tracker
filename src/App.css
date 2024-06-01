@@ -124,7 +124,7 @@
     -moz-appearance: none;
     height: 18px;
     width: 18px;
-    padding: 0.9rem;  /* Add padding */
+    padding: 0.9rem;  
     border-radius: 8px;
     outline: none;
     display: inline-block;
@@ -241,10 +241,10 @@ button{
   align-items: center;
 }
 .arrow-icon{
-  display: flex;
-  width: 28px;
-  transform: rotate(90deg);
+  display: block;
+  width: 25px;
 }
+
 @media screen and (max-width: 500px) {
   .footer-section {
     width: 89%;
@@ -263,8 +263,7 @@ button{
     width: 32px;
   }
   .arrow-icon{
-    width: 20px;
-    transform: rotate(90deg);
+    width: 18px;
   }
 }
 
