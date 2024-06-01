@@ -1,0 +1,57 @@
+{
+    "name": "Trackbit Habit Tracker",
+    "short_name": "Trackbit",
+    "start_url": "../index.html",
+    "display": "standalone",
+    "background_color": "#eeece2",
+    "theme_color": "#1f1f1f",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "../src/assets/arrow.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "../src/assets/calendar.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "../src/assets/logo.png",
+            "type": "image/png",
+            "sizes": "764x327"
+        },
+        {
+            "src": "../src/assets/logoOne.png",
+            "type": "image/png",
+            "sizes": "942x403"
+        },
+        {
+            "src": "../src/assets/menu.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "../src/assets/notification-bell.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "../src/assets/target-alter.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "../src/assets/target.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "./favicon.png",
+            "type": "image/png",
+            "sizes": "500x500",
+            "purpose": "maskable"
+        }
+    ]
+}
