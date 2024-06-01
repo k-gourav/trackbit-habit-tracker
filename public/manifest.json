@@ -10,42 +10,50 @@
         {
             "src": "../src/assets/arrow.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "any"
         },
         {
             "src": "../src/assets/calendar.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "any"
         },
         {
             "src": "../src/assets/logo.png",
             "type": "image/png",
-            "sizes": "764x327"
+            "sizes": "764x327",
+            "purpose": "any"
         },
         {
             "src": "../src/assets/logoOne.png",
             "type": "image/png",
-            "sizes": "942x403"
+            "sizes": "942x403",
+            "purpose": "any"
         },
         {
             "src": "../src/assets/menu.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "any"
         },
         {
             "src": "../src/assets/notification-bell.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "any"
         },
         {
             "src": "../src/assets/target-alter.png",
             "type": "image/png",
-            "sizes": "96x96"
+            "sizes": "96x96",
+            "purpose": "any"
         },
         {
             "src": "../src/assets/target.png",
             "type": "image/png",
-            "sizes": "96x96"
+            "sizes": "96x96",
+            "purpose": "any"
         },
         {
             "src": "./favicon.png",
