@@ -6,7 +6,7 @@ import '../App.css'
 const Header = () => (
     <header>
             <div className="nav-items">
-                <h1>Hello, <span>Kumar👋</span></h1>
+                <h1>Hello, <span>User👋</span></h1>
             </div>
     </header>
 )
