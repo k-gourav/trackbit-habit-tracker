@@ -4,7 +4,6 @@ import goal from '../assets/target.png'
 import Footer from '../components/Footer'
 import { useState } from 'react'
 const TaskList = ({ description }) => {
-    console.log(description)
     return (
     <div className="task-list">
         <div className="task-descript">
@@ -23,7 +22,6 @@ const Body = () => {
 
 
     const [list, setList] = useState([])
-    console.log(list)
     return (<>
         <main className='main-container'>
             <div className='day-status'>
