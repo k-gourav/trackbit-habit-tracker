@@ -7,11 +7,11 @@ const TaskList = ({ description }) => {
     return (
     <div className="task-list">
         <div className="task-descript">
-            <img className='task-logo' src={goal} alt="task-image" />
+            <img className="task-logo" src={goal} alt="task-image" />
             <p className="task-descript">{description}</p>
         </div>
         {/* <div className='checkbox-custom'><input type="checkbox" name="task-checker"/></div> */}
-        <div class="checkbox-wrapper-13">
+        <div className="checkbox-wrapper-13">
             <input id="c1-13" type="checkbox" />
         </div>
     </div>
@@ -19,7 +19,6 @@ const TaskList = ({ description }) => {
 }
 
 const Body = () => {
-
 
     const [list, setList] = useState([])
     return (<>
@@ -30,7 +29,7 @@ const Body = () => {
             </div>
 
             <div className="task-container">
-                { list.map((element) => <TaskList key="1" description={element} imgLink={goal}  /> ) }
+                { list.map((element) => <TaskList key={element} description={element} imgLink={goal}  /> ) }
 
 
             </div>

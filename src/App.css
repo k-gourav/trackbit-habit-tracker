@@ -87,6 +87,7 @@
     padding: 0.4rem 0.8rem;
     width: 90%;
     word-wrap: break-word;
+    gap: 5px;
   }
   .task-container{
     gap: 0.8rem;
